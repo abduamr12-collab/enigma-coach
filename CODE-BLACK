@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>ENIGMA COACH | المدرب الغامض</title>
+<style>
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body { margin:0; background:#0a0a0a; color:white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial; text-align:center; }
+  .hero { padding: 80px 20px 40px; }
+  .hero h1 { font-size: clamp(32px, 8vw, 60px); color: #3b82f6; letter-spacing: 3px; margin:0; }
+  .hero p { color:#aaa; font-size:18px; margin:10px 0; }
+  .btn { background:#3b82f6; color:white; padding:15px 30px; border-radius:30px; text-decoration:none; display:inline-block; margin:10px; font-weight:bold; transition:0.3s; }
+  .btn:active { transform: scale(0.95); }
+  .btn-outline { background:transparent; border:2px solid #3b82f6; }
+  
+  .pricing-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:20px; max-width:1100px; margin:30px auto; padding:0 20px; }
+  .card { background:#171717; padding:30px 20px; border-radius:20px; border:1px solid #333; position:relative; }
+  .card.popular { border:2px solid #3b82f6; transform: scale(1.05); }
+  .popular-badge { position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:#3b82f6; padding:5px 15px; border-radius:20px; font-size:12px; }
+  .price { font-size:36px; color:#3b82f6; font-weight:bold; margin:10px 0; }
+  .old-price { text-decoration: line-through; color:#666; font-size:16px; }
+  .save { color:#22c55e; font-size:14px; margin-bottom:10px; }
+
+  @media (max-width: 768px) { .card.popular { transform: scale(1); } }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>ENIGMA COACH</h1>
+  <p>اتمرن في الظل .. اظهر في النور</p>
+  <p>المدرب الغامض - كل التخصصات | متابعة أونلاين</p>
+  <a class="btn" href="https://wa.me/201130047063?text=عايز%20اشترك%20في%20متابعة%20ENIGMA">ابدأ الآن</a>
+</div>
+
+<div class="pricing-grid">
+
+  <div class="card">
+    <h3>شهر واحد</h3>
+    <div class="price">500 جنيه</div>
+    <p>تمرين + نظام غذائي + متابعة يومية</p>
+    <a class="btn" href="https://wa.me/201130047063?text=عايز%20اشترك%20شهر%20واحد">اشترك الآن</a>
+  </div>
+
+  <div class="card popular">
+    <div class="popular-badge">الأكثر طلباً</div>
+    <h3>3 شهور</h3>
+    <div class="old-price">1500 جنيه</div>
+    <div class="price">1350 جنيه</div>
+    <div class="save">وفر 150 جنيه</div>
+    <p>تمرين + نظام غذائي + متابعة + تعديل شهري</p>
+    <a class="btn" href="https://wa.me/201130047063?text=عايز%20اشترك%203%20شهور">اشترك الآن</a>
+  </div>
+
+  <div class="card">
+    <h3>6 شهور</h3>
+    <div class="old-price">3000 جنيه</div>
+    <div class="price">2500 جنيه</div>
+    <div class="save">وفر 500 جنيه</div>
+    <p>خطة تحول كامل + متابعة دقيقة</p>
+    <a class="btn" href="https://wa.me/201130047063?text=عايز%20اشترك%206%20شهور">اشترك الآن</a>
+  </div>
+
+  <div class="card">
+    <h3>12 شهر - التزام</h3>
+    <div class="old-price">6000 جنيه</div>
+    <div class="price">4500 جنيه</div>
+    <div class="save">وفر 1500 جنيه 🔥</div>
+    <p>رحلة تغيير شاملة - أفضل سعر</p>
+    <a class="btn" href="https://wa.me/201130047063?text=عايز%20اشترك%2012%20شهر">اشترك الآن</a>
+  </div>
+
+</div>
+
+<div style="background:#111; padding:30px; margin-top:40px;">
+  <p>📲 واتساب: 01130047063</p>
+  <p>📸 انستجرام: @abduamr98</p>
+</div>
+
+<p style="margin:30px; color:#666;">ENIGMA COACH - 2026</p>
+
+</body>
+</html>
