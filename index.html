@@ -2,84 +2,128 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>ENIGMA COACH | المدرب الغامض</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
-    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  body { margin:0; background:#0a0a0a; color:white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial; text-align:center; }
-  .hero { padding: 80px 20px 40px; }
-  .hero h1 { font-size: clamp(32px, 8vw, 60px); color: #3b82f6; letter-spacing: 3px; margin:0; }
-  .hero p { color:#aaa; font-size:18px; margin:10px 0; }
-  .btn { background:#3b82f6; color:white; padding:15px 30px; border-radius:30px; text-decoration:none; display:inline-block; margin:10px; font-weight:bold; transition:0.3s; }
-  .btn:active { transform: scale(0.95); }
-  .btn-outline { background:transparent; border:2px solid #3b82f6; }
-  
-  .pricing-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:20px; max-width:1100px; margin:30px auto; padding:0 20px; }
-  .card { background:#171717; padding:30px 20px; border-radius:20px; border:1px solid #333; position:relative; }
-  .card.popular { border:2px solid #3b82f6; transform: scale(1.05); }
-  .popular-badge { position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:#3b82f6; padding:5px 15px; border-radius:20px; font-size:12px; }
-  .price { font-size:36px; color:#3b82f6; font-weight:bold; margin:10px 0; }
-  .old-price { text-decoration: line-through; color:#666; font-size:16px; }
-  .save { color:#22c55e; font-size:14px; margin-bottom:10px; }
-
-  @media (max-width: 768px) { .card.popular { transform: scale(1); } }
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{background:#050507;color:#fff;font-family:'Cairo',sans-serif}
+nav{position:fixed;top:0;width:100%;z-index:99;background:rgba(5,5,7,0.85);backdrop-filter:blur(12px);border-bottom:1px solid #1a1a1a;padding:14px 24px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:900;letter-spacing:3px} .logo span{color:#3b82f6}
+.hero{padding:150px 20px 80px;text-align:center}
+.hero h1{font-size:clamp(38px,9vw,80px);font-weight:900;line-height:.9} .hero h1 span{color:#3b82f6}
+.hero p{color:#777;max-width:520px;margin:18px auto}
+.section{max-width:1100px;margin:0 auto;padding:70px 20px}
+.form-box{background:#0e0e12;border:1px solid #222;border-radius:24px;padding:30px;max-width:650px;margin:30px auto}
+.form-box h2{text-align:center;margin-bottom:20px}
+label{display:block;text-align:right;margin:14px 0 6px;color:#aaa;font-size:14px}
+input,select,textarea{width:100%;padding:14px;border-radius:12px;border:1px solid #2a2a2e;background:#15151a;color:#fff;font-family:'Cairo';font-size:15px;outline:none}
+input:focus,select:focus,textarea:focus{border-color:#3b82f6}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn{width:100%;padding:16px;border-radius:30px;border:0;background:#3b82f6;color:#fff;font-weight:900;font-size:17px;margin-top:20px;cursor:pointer}
+.btn:active{transform:scale(.97)}
+.pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:30px}
+.p-card{background:#0e0e12;border:1px solid #222;border-radius:20px;padding:24px;text-align:center}
+.p-card.pop{border:2px solid #3b82f6}
+.p-price{font-size:34px;font-weight:900;color:#3b82f6}
+.old{color:#555;text-decoration:line-through;font-size:13px} .save{color:#22c55e;font-size:12px;font-weight:700}
+@media(max-width:600px){.grid2{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
+<nav><div class="logo">ENIGMA <span>COACH</span></div><a href="https://wa.me/201130047063" style="background:#fff;color:#000;padding:7px 16px;border-radius:20px;text-decoration:none;font-weight:700;font-size:13px">واتساب</a></nav>
+
 <div class="hero">
-  <h1>ENIGMA COACH</h1>
-  <p>اتمرن في الظل .. اظهر في النور</p>
-  <p>المدرب الغامض - كل التخصصات | متابعة أونلاين</p>
-  <a class="btn" href="https://wa.me/201130047063?text=عايز%20اشترك%20في%20متابعة%20ENIGMA">ابدأ الآن</a>
+<h1>اتمرن في الظل<br><span>اظهر في النور</span></h1>
+<p>قبل ما نبدأ، لازم أعرفك. جاوب على الأسئلة دي وسيب الباقي عليا.</p>
 </div>
 
-<div class="pricing-grid">
+<div class="section">
+<div class="form-box">
+<h2>🔍 تقييم مجاني قبل الاشتراك</h2>
 
-  <div class="card">
-    <h3>شهر واحد</h3>
-    <div class="price">500 جنيه</div>
-    <p>تمرين + نظام غذائي + متابعة يومية</p>
-    <a class="btn" href="https://wa.me/201130047063?text=عايز%20اشترك%20شهر%20واحد">اشترك الآن</a>
-  </div>
+<label>اسمك</label>
+<input id="name" placeholder="مثلا: أحمد">
 
-  <div class="card popular">
-    <div class="popular-badge">الأكثر طلباً</div>
-    <h3>3 شهور</h3>
-    <div class="old-price">1500 جنيه</div>
-    <div class="price">1350 جنيه</div>
-    <div class="save">وفر 150 جنيه</div>
-    <p>تمرين + نظام غذائي + متابعة + تعديل شهري</p>
-    <a class="btn" href="https://wa.me/201130047063?text=عايز%20اشترك%203%20شهور">اشترك الآن</a>
-  </div>
-
-  <div class="card">
-    <h3>6 شهور</h3>
-    <div class="old-price">3000 جنيه</div>
-    <div class="price">2500 جنيه</div>
-    <div class="save">وفر 500 جنيه</div>
-    <p>خطة تحول كامل + متابعة دقيقة</p>
-    <a class="btn" href="https://wa.me/201130047063?text=عايز%20اشترك%206%20شهور">اشترك الآن</a>
-  </div>
-
-  <div class="card">
-    <h3>12 شهر - التزام</h3>
-    <div class="old-price">6000 جنيه</div>
-    <div class="price">4500 جنيه</div>
-    <div class="save">وفر 1500 جنيه 🔥</div>
-    <p>رحلة تغيير شاملة - أفضل سعر</p>
-    <a class="btn" href="https://wa.me/201130047063?text=عايز%20اشترك%2012%20شهر">اشترك الآن</a>
-  </div>
-
+<div class="grid2">
+<div><label>السن</label><input id="age" type="number" placeholder="25"></div>
+<div><label>الوزن (كجم)</label><input id="weight" type="number" placeholder="80"></div>
 </div>
 
-<div style="background:#111; padding:30px; margin-top:40px;">
-  <p>📲 واتساب: 01130047063</p>
-  <p>📸 انستجرام: @abduamr98</p>
+<div class="grid2">
+<div><label>الطول (سم)</label><input id="height" type="number" placeholder="175"></div>
+<div><label>بتتمرن فين؟</label>
+<select id="place"><option>جيم</option><option>البيت</option><option>جيم + بيت</option></select></div>
 </div>
 
-<p style="margin:30px; color:#666;">ENIGMA COACH - 2026</p>
+<label>هدفك الأساسي ايه؟</label>
+<select id="goal">
+<option>تخسيس و حرق دهون</option>
+<option>زيادة عضلية - ضخامة</option>
+<option>فتنس و لياقة</option>
+<option>تجهيز لبطولة</option>
+<option>زيادة وزن</option>
+</select>
+
+<label>تخصصك اللي عايزه ايه؟</label>
+<select id="special">
+<option>كمال أجسام</option>
+<option>باورلفتنج - قوة</option>
+<option>كروسفت</option>
+<option>فتنس و كارديو</option>
+<option>تخسيس فقط</option>
+<option>تأهيل و لياقة</option>
+</select>
+
+<label>كام يوم تقدر تتمرن في الأسبوع؟</label>
+<select id="days"><option>3 أيام</option><option>4 أيام</option><option>5 أيام</option><option>6 أيام</option></select>
+
+<label>هل بتعاني من أي إصابة أو مشكلة صحية؟ (مهم جدا)</label>
+<textarea id="injury" rows="3" placeholder="مثلا: إصابة في الركبة اليمين، خشونة، ضغط، سكر... لو مفيش اكتب لا يوجد"></textarea>
+
+<label>اختار الباقة</label>
+<select id="package">
+<option value="شهر واحد - 500 جنيه">شهر واحد - 500 جنيه</option>
+<option value="3 شهور - 1350 جنيه (الأكثر طلبا)">3 شهور - 1350 جنيه (الأكثر طلبا)</option>
+<option value="6 شهور - 2500 جنيه">6 شهور - 2500 جنيه</option>
+<option value="12 شهر - 4500 جنيه">12 شهر - 4500 جنيه</option>
+</select>
+
+<button class="btn" onclick="sendWA()">ابعت تقييمي على الواتساب ←</button>
+<p style="text-align:center;color:#555;font-size:12px;margin-top:12px">بياناتك سرية 100% ومش بتتخزن في الموقع</p>
+</div>
+
+<h2 style="text-align:center;margin-top:70px">الباقات</h2>
+<div class="pricing">
+<div class="p-card"><h4>شهر</h4><div class="p-price">500 ج</div></div>
+<div class="p-card pop"><h4>3 شهور</h4><div class="old">1500</div><div class="p-price">1350 ج</div><div class="save">وفر 150 ج</div></div>
+<div class="p-card"><h4>6 شهور</h4><div class="old">3000</div><div class="p-price">2500 ج</div><div class="save">وفر 500 ج</div></div>
+<div class="p-card"><h4>12 شهر</h4><div class="old">6000</div><div class="p-price">4500 ج</div><div class="save">وفر 1500 ج 🔥</div></div>
+</div>
+</div>
+
+<script>
+function sendWA(){
+  let n=document.getElementById('name').value||'بدون اسم';
+  let a=document.getElementById('age').value||'-';
+  let w=document.getElementById('weight').value||'-';
+  let h=document.getElementById('height').value||'-';
+  let pl=document.getElementById('place').value;
+  let g=document.getElementById('goal').value;
+  let s=document.getElementById('special').value;
+  let d=document.getElementById('days').value;
+  let inj=document.getElementById('injury').value||'لا يوجد';
+  let pack=document.getElementById('package').value;
+
+  if(inj.trim()==''||inj=='لا يوجد' && !confirm('متأكد معندكش أي إصابة؟ مهم تكتبها')){ /* continue */ }
+
+  let msg=`سلام يا كوتش ENIGMA 👊%0A%0Aعايز اشترك وعملت التقييم:%0A%0A*الاسم:* ${n}%0A*السن:* ${a}%0A*الوزن:* ${w} كجم%0A*الطول:* ${h} سم%0A*مكان التمرين:* ${pl}%0A*عدد الأيام:* ${d}%0A%0A*الهدف:* ${g}%0A*التخصص المطلوب:* ${s}%0A%0A*الإصابات / مشاكل صحية:* ${inj}%0A%0A*الباقة المختارة:* ${pack}%0A%0Aمستني ردك يا غامض 🔥`;
+  
+  window.open('https://wa.me/201130047063?text='+msg,'_blank');
+}
+</script>
 
 </body>
 </html>
