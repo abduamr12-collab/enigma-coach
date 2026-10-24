@@ -2,67 +2,60 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ENIGMA COACH - 450</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>ENIGMA COACH - 450 EGP</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&family=Orbitron:wght@900&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 body{font-family:'Cairo',sans-serif;background:#080808;color:#fff}
 .en{font-family:'Orbitron',sans-serif}
-.topbar{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;padding:14px 20px;background:#000;border-bottom:1px solid #222;z-index:99}
-.hero{display:flex;justify-content:center;padding:80px 16px 30px}
+.hero{min-height:100vh;display:flex;justify-content:center;padding:40px 16px}
 .wrap{max-width:540px;width:100%}
-.card{background:#111;border:1px solid #222;border-radius:22px;padding:26px;margin:18px 0}
-.btn{width:100%;padding:18px;background:#fff;color:#000;border-radius:14px;font-weight:900;font-size:19px;border:none;cursor:pointer;margin-top:15px}
-input,select,textarea{width:100%;padding:15px;background:#1a1a1a;border:1px solid #333;border-radius:12px;color:#fff;margin:9px 0;font-size:16px}
-label{font-size:13px;color:#999;margin-top:12px;display:block}
-.price-grid{display:grid;gap:16px;margin-top:16px}
-.price-card{background:#161616;border:2px solid #333;border-radius:18px;padding:20px;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+.card{background:#111;border:1px solid #222;border-radius:22px;padding:26px;margin:16px 0}
+.btn{width:100%;padding:18px;background:#fff;color:#000;border-radius:14px;font-weight:900;font-size:19px;border:none;cursor:pointer}
+input,select,textarea{width:100%;padding:14px;background:#1a1a1a;border:1px solid #333;border-radius:12px;color:#fff;margin:8px 0;font-size:16px;font-family:'Cairo'}
+label{font-size:12px;color:#999;margin-top:10px;display:block}
+.price-grid{display:grid;gap:14px}
+.price-card{border:2px solid #333;border-radius:16px;padding:18px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;background:#161616}
 .price-card.active{border-color:#fff;background:#fff;color:#000}
-.price-card span{font-size:28px;font-weight:900}
+.price-card span{font-size:26px;font-weight:900}
 </style>
 </head>
 <body>
-<div class="topbar"><div class="en">ENIGMA COACH</div><div style="color:#666;font-size:11px">450 EGP / MONTH</div></div>
+<div style="text-align:center;padding:18px;border-bottom:1px solid #222;position:sticky;top:0;background:#000;z-index:10"><div class="en" style="font-size:20px">ENIGMA COACH</div><div style="font-size:10px;color:#666">ONLINE COACHING - 450 EGP</div></div>
 <div class="hero"><div class="wrap">
-<h1 class="en" style="font-size:44px;text-align:center">ENIGMA<br>COACH</h1>
-<p style="text-align:center;color:#777;margin:10px 0 20px">اختار باقتك - 450 جنيه في الشهر</p>
+<h1 class="en" style="text-align:center;font-size:40px;line-height:.9">ENIGMA<br>COACH</h1>
+<p style="text-align:center;color:#777;margin:12px 0">نظام غامض - نتائج حقيقية</p>
 
 <div class="card">
-<h3>اختار الباقة - دوس عليها</h3>
-<div class="price-grid">
-<div class="price-card active" onclick="pick(this,'شهر - 450 جنيه')">
-<div><b>شهر واحد</b><br><small>متابعة كاملة</small></div><div><span>450</span> جنيه</div>
+<h3>اختار باقتك (دوس عليها)</h3>
+<div class="price-grid" style="margin-top:12px">
+<div class="price-card active" onclick="pick(this,'شهر - 450')"><div><b>شهر</b><br><small>متابعة كاملة</small></div><div><span>450</span>ج</div></div>
+<div class="price-card" onclick="pick(this,'3 شهور - 1200')"><div><b>3 شهور</b><br><small style="color:#0f0">وفر 150</small></div><div><span>1200</span>ج</div></div>
+<div class="price-card" onclick="pick(this,'6 شهور - 2200')"><div><b>6 شهور</b><br><small style="color:#0f0">وفر 500</small></div><div><span>2200</span>ج</div></div>
+<div class="price-card" onclick="pick(this,'12 شهر - 4000')"><div><b>12 شهر</b><br><small style="color:#0f0">وفر 1400</small></div><div><span>4000</span>ج</div></div>
 </div>
-<div class="price-card" onclick="pick(this,'3 شهور - 1200 جنيه')">
-<div><b>3 شهور</b><br><small style="color:#0f0">وفر 150 - الأكثر طلبا</small></div><div><span>1200</span> جنيه</div>
-</div>
-<div class="price-card" onclick="pick(this,'6 شهور - 2200 جنيه')">
-<div><b>6 شهور</b><br><small style="color:#0f0">وفر 500 جنيه</small></div><div><span>2200</span> جنيه</div>
-</div>
-<div class="price-card" onclick="pick(this,'12 شهر - 4000 جنيه')">
-<div><b>12 شهر</b><br><small style="color:#0f0">وفر 1400 جنيه</small></div><div><span>4000</span> جنيه</div>
-</div>
-</div>
-<p id="sel" style="text-align:center;color:#0f0;margin-top:14px;font-weight:700">✓ اخترت: شهر - 450 جنيه</p>
+<p id="sel" style="text-align:center;color:#0f0;margin-top:12px">✓ اخترت: شهر - 450</p>
 </div>
 
 <div class="card">
 <h3>بياناتك</h3>
-<label>هدفك</label><select id="goal"><option>كثافة عضلية</option><option>تخسيس</option><option>ضخامة</option></select>
-<label>التخصص</label><select id="spec"><option>كمال أجسام</option><option>تخسيس</option><option>قوة بدنية</option><option>تغذية فقط</option></select>
-<label>اصابات؟</label><textarea id="injury" placeholder="لا يوجد"></textarea>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div><label>الوزن</label><input id="w" type="number" placeholder="kg"></div><div><label>الطول</label><input id="h" type="number" placeholder="cm"></div></div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div><label>السن</label><input id="a" type="number"></div><div><label>مكان التمرين</label><select id="pl"><option>جيم</option><option>بيت</option></select></div></div>
-<label>واتسابك</label><input id="ph" placeholder="01xxxxxxxxx">
-<button class="btn" onclick="send()">احجز بـ 450</button>
+<label>هدفك</label><select id="g"><option>كثافة عضلية</option><option>تخسيس</option><option>ضخامة</option><option>لياقة</option></select>
+<label>التخصص اللي عايزه</label><select id="s"><option>كمال أجسام</option><option>تخسيس</option><option>قوة</option><option>تغذية</option></select>
+<label>اصابة او مشكلة؟</label><textarea id="inj" placeholder="لا يوجد"></textarea>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div><label>الوزن</label><input id="w" type="number" placeholder="kg"></div><div><label>الطول</label><input id="h" type="number" placeholder="cm"></div></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div><label>السن</label><input id="a" type="number"></div><div><label>مكان التمرين</label><select id="pl"><option>جيم</option><option>بيت</option></select></div></div>
+<label>رقم الواتساب</label><input id="ph" placeholder="01xxxxxxxxx">
+<button class="btn" onclick="send()">احجز على واتساب</button>
 </div>
-</div></div>
 
+<div style="text-align:center;padding:20px;color:#666;font-size:12px">WhatsApp: 01130047063 | @abduamr98</div>
+</div></div>
 <script>
-let pkg="شهر - 450 جنيه";
-function pick(el,t){document.querySelectorAll('.price-card').forEach(c=>c.classList.remove('active'));el.classList.add('active');pkg=t;document.getElementById('sel').innerText="✓ اخترت: "+t;}
-function send(){
- let w=document.getElementById('w').value,h=document.getElementById('h').value,ph=document.getElementById('ph').value;
- if(!w||!h||!ph){alert('كمل وزنك وطولك ورقمك');return;}
- let msg=`حجز ENIGMA%0Aالباقة: ${pkg}%0Aالهدف: ${document.getElementById('goal').value}%0Aالتخصص: ${document.getElementById('spec').value}%0Aالاصابة: ${document.getElementById('injury').value}%0Aالوزن:${w} الطول:${h} السن:${document.getElementById('a').value}%0Aمكان:${document.getElementById('pl').value}%0Aرقم
+let pkg='شهر - 450';
+function pick(e,t){document.querySelectorAll('.price-card').forEach(c=>c.classList.remove('active'));e.classList.add('active');pkg=t;document.getElementById('sel').innerText='✓ اخترت: '+t}
+function send(){let w=document.getElementById('w').value,h=document.getElementById('h').value,ph=document.getElementById('ph').value;if(!w||!h||!ph){alert('كمل البيانات');return}let m=`حجز ENIGMA%0Aالباقة: ${pkg}%0Aهدف:${document.getElementById('g').value}%0Aتخصص:${document.getElementById('s').value}%0Aاصابة:${document.getElementById('inj').value}%0Aوزن:${w} طول:${h} سن:${document.getElementById('a').value}%0Aمكان:${document.getElementById('pl').value}%0Aرقم:${ph}`;window.open(`https://wa.me/201130047063?text=${m}`,'_blank')}
+</script>
+</body>
+</html>
